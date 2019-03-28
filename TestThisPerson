@@ -1,0 +1,28 @@
+class Personer{
+    private String name;
+    private int age;
+    public Personer() {
+        System.out.println("**************");
+    }
+    public Personer(String name) {
+        System.out.println("**************");
+        this.name=name;
+    }
+    public Personer(String name,int age) {
+        System.out.println("**************");
+        this.name=name;
+        this.age=age;
+
+    }
+
+    public String getInfo() {
+        return "姓名： "+this.name+"  年龄："+this.age;
+    }
+}
+public class TestThisPerson {
+    public static void main(String args[]) {
+        System.out.println(new Personer().getInfo());
+        System.out.println(new Personer("张三").getInfo());
+        System.out.println(new Personer("张三",20).getInfo());
+    }
+}	
